@@ -1,4 +1,3 @@
-/* stateful widget that returns the Materialapp with all his content*/
 import 'package:flutter/material.dart';
 import 'package:quiz_app/questions_screen.dart';
 import 'package:quiz_app/start_screen.dart';
