@@ -9,7 +9,7 @@ class SummaryItem extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final isCorrectAnswer = itemData['user_name'] == itemData['correct_answer'];
+    final isCorrectAnswer = itemData['user_answer'] == itemData['correct_answer'];
 
     return Padding(
       padding: const EdgeInsets.symmetric(
@@ -38,11 +38,11 @@ class SummaryItem extends StatelessWidget {
               const SizedBox(
                 height: 5,
               ),
-              Text(itemData['user_name'] as String,
+              Text(itemData['user_answer'] as String,
                   style: const TextStyle(
                     color: Color.fromARGB(255, 202, 171, 252),
                   )),
-              Text(itemData['correct-answer'] as String,
+              Text(itemData['correct_answer'] as String,
                   style: const TextStyle(
                     color: Color.fromARGB(255, 181, 254, 246),
                   )),
